@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  nest_db:
+    image: postgres:14
+    environment:
+      POSTGRES_PASSWORD: relldevpassword
+      POSTGRES_USER: relldev
+      POSTGRES_DB: nestdb
+    ports:
+      - 5488:5432
